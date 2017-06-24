@@ -5,40 +5,43 @@
   <link href="resources/css/reset.css"type="text/css" rel="stylesheet">
   <link href="resources/css/style.css"type="text/css" rel="stylesheet">
   <meta name="viewport"="content"="width=width-decice,initial-scale=1.0">
-
+   <link href="https://fonts.googleapis.com/css?family=Michroma|Roboto" rel="stylesheet">
 </head>
 <body>
 <!--header-->
+     <header  class="desktop headerflex">
 
-     <header class="headerflex">
-
-       <nav class="containerflex">
-
-               <div class ="logoflex">
-                     <img  src="resources\images\ic-logo.svg"alt="logo">
-                     <span id="bold">COLMAR</span><span id="grey"> ACADEMY</span>
-                </div>
-
-
-               <div class="navigationflex">
-                 <ul>
+       <div class="containerflex">
+         <div class ="logoflex">
+               <img  src="resources\images\ic-logo.svg"alt="logo">
+               <span id="bold">COLMAR</span><span id="grey"> ACADEMY</span>
+          </div>
+          <nav>
+                 <ul class="navigation">
                     <li><a href="#">On Campus</a></li>
                     <li><a href="#">On Line</a></li>
                     <li><a href="#">Companies</a></li>
                     <li><a href="#">Sign in</a></li>
-                  </ul>
-                 </div>
-
-      <!--mobile-nav-->
-      <div class="mobilenavflex">
-        <img src="resources\images\ic-logo.svg" alt="icon">
-        <img src="resources\images\ic-on-campus.svg" alt="icon">
-        <img src="resources\images\ic-online.svg" alt="icon">
-         <img src="resources\images\ic-login.svg" alt="icon">
+                  </ul>         
+         </nav>
        </div>
 
-        </nav>
       </header>
+
+
+      <!--mobile-nav-->
+      <header class="mobilenav headerflex">
+        <div class="containerflex">
+          <nav>
+            <ul>
+               <li><img src="resources\images\ic-logo.svg" alt="icon"></li>
+               <li><img src="resources\images\ic-on-campus.svg" alt="icon"></li>
+               <li><img src="resources\images\ic-online.svg" alt="icon"></li>
+               <li><img src="resources\images\ic-login.svg" alt="icon"></li>
+             </ul>
+          </nav>
+        </div>
+    </header>
 
 <!--banner-->
 
@@ -81,8 +84,8 @@
 
        <div class="infoarticle" id="first-infoarticle">
          <div class="small-image-container">
-           <img class="desktop"  src="./resources/images/information-orientation.jpg">
-           <img class="mobile"  src="./resources/images/information-orientation-mobile.jpg">
+           <img class="desktopimg"  src="./resources/images/information-orientation.jpg">
+           <img class="mobileimg"  src="./resources/images/information-orientation-mobile.jpg">
          </div>
 
          <div class="infoarticle-description">
@@ -94,8 +97,8 @@
 
        <div class="infoarticle">
          <div class="small-image-container">
-           <img class="desktop"  src="./resources/images/information-campus.jpg">
-           <img class="mobile"  src="./resources/images/information-campus-mobile.jpg">
+           <img class="desktopimg"  src="./resources/images/information-campus.jpg">
+           <img class="mobileimg"  src="./resources/images/information-campus-mobile.jpg">
          </div>
 
          <div class="infoarticle-description">
@@ -105,10 +108,10 @@
          </div>
        </div>
 
-       <div class="infoarticle" id="highlighted-infoarticle">
+       <div class="infoarticle highlights">
          <div class="small-image-container">
-           <img class="desktop"  src="./resources/images/information-guest-lecture.jpg">
-           <img class="mobile"  src="./resources/images/information-guest-lecture-mobile.jpg">
+           <img class="desktopimg"  src="./resources/images/information-guest-lecture.jpg">
+           <img class="mobileimg"  src="./resources/images/information-guest-lecture-mobile.jpg">
          </div>
 
          <div class="infoarticle-description">
@@ -190,7 +193,7 @@
                              <p>Analytics, Content Marketing, Mobile Marketing</p>
                          </div>
                        </div>
-      </div>
+
 
 
           <div class="mobcourses">
@@ -203,54 +206,55 @@
            </div>
 
 </div>
-
+</div>
 
 
 <!-- Video Section -->
-
-    <div class="video-section">
+  <div class="video-section">
       <h2>Thesis exhibit</h2>
 
       <div class="exhibit">
-        <div class="main-video">
-          <video controls poster>
-            <source src="./resources/videos/thesis.mp4" type="video/mp4" id="video">
-              Your browser does not support the video tag.
-          </video>
-          <div class="video-text">
-            <h4>Reimagine urban</h4>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
-              Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          </div>
-        </div>
+          <div class="main-video">
+                <video controls poster>
+                  <source src="./resources/videos/thesis.mp4" type="video/mp4" id="video">
+                   Your browser does not support the video tag.
+                   </video>
+               <div class="video-text">
+                <h4>Reimagine urban</h4>
+                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
+                 Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+               </div>
+           </div>
 
         <div class="video-article-list">
 
-          <div class="video-article" id="highlighted-video-article">
-            <div class="video-image-container">
-              <img src="./resources/images/thesis-fisma.jpg">
-            </div>
 
-            <div class="video-article-description">
-              <h4>Fisma: Design and</h4>
-              <p>Designer showcase of new prototype product</p>
-            </div>
-          </div>
 
-          <div class="video-article">
-            <div class="video-image-container">
-              <img src="./resources/images/thesis-now-and-then.jpg">
-            </div>
 
-            <div class="video-article-description">
-              <h4>Now and then</h4>
-              <p>Research study about New York</p>
-            </div>
-          </div>
+             <div  class="video-article highlights">
+                 <div class="video-image-container">
+                   <img src="./resources/images/thesis-fisma.jpg">
+                  </div>
+                <div class="video-article-description">
+                   <h4>Fisma: Design and</h4>
+                    <p>Designer showcase of new prototype product</p>
+                </div>
+             </div>
 
+
+             <div class="video-article">
+                 <div class="video-image-container">
+                 <img src="./resources/images/thesis-now-and-then.jpg">
+                 </div>
+                 <div class="video-article-description">
+                  <h4>Now and then</h4>
+                   <p>Research study about New York</p>
+                 </div>
+             </div>
         </div>
-      </div>
+
     </div>
+  </div>
 
 <!-- Footer Section -->
 
