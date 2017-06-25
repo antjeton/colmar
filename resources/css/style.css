@@ -16,7 +16,7 @@ html{
 body{
       width:100%;
       height:100%;
-      margin 0px;
+      margin :0px;
       padding:0px;
       overflow-x: hidden;
        line-height:1;
@@ -108,17 +108,20 @@ nav{
     height:64px;
      margin: 0 auto;}
 
+.mobilenavigation{  background-color:#b2ebf2;
 
+}
 
 
 .mobilenavigation li{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background-color:white;
+  /*background-color:white;
+  color:black;*/
   font-size:20rem;
-                     color:black;
-                      font-size:2rem;}
+
+  font-size:2rem;}
 
 
 /*.mobilenavigation{display:none;}*/
@@ -530,7 +533,7 @@ p.video-article-description {
   color: #5d5d5d;
 }
 .highlights > div,  .highlights {
-  background-color: grey;
+  background-color:#FED08F;
 }
 
 /* Footer */
@@ -595,8 +598,39 @@ footer .privacy a {
                        justify-content:center;
 
                     }
+/*trialsection----------------------------------*/
 
-.banner-image{display:none;}
+.banner {
+  display: flex;
+  flex-direction:column;
+  align-content:center;
+  width: 100%;
+  background-color: #03f7fa;
+}
+
+.banner-image {
+  margin:0 auto;
+  height:11.25rem;
+  width: 100%;
+  background-color:#476D7C;
+}
+button{
+        background-color:#476D7C;
+        color:black;
+      }
+
+
+.banner-image img {display:none;}
+
+#learn{padding-top:32px;}
+
+
+.feature{padding-bottom:32px;}
+
+
+/* ---end of trial-----------------------*/
+
+/*.banner-image{display:none;}*/
 
 .feature {
   margin-left: 1rem;
@@ -694,5 +728,5 @@ footer .privacy a {
 }
 
 /*footer*/
-
+.privacy a{display:none;}
 .privacy a{display:none;}
