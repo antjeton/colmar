@@ -7,7 +7,7 @@ html{
    }
 .mobilenav {display:none;}
 
- .mobileimg{display:none;}
+
 
 .mobcourses{display:none;}
 
@@ -21,7 +21,8 @@ a{
   text-decoration:none;
   color:inherit;
 }
-header{
+.headerflex{
+       display:flex;
        width:100%;
        height:4rem;
        position:fixed;
@@ -29,12 +30,6 @@ header{
        background-color:black;
        border-bottom:1px solid #03f7fa;
 }
-.headerflex{display:flex;}
-
-.mobilenavflex{
-               display:none;
-}
-
 .containerflex{
                display:flex;
                justify-content:space-between;
@@ -42,6 +37,10 @@ header{
                width:100%;
                margin:0 auto;
 }
+
+
+
+
 
 
 .logoflex{
@@ -61,6 +60,7 @@ header{
            color:#e0f7fa;
        }
 
+.desktopnavigation{display:flex;}
 nav{
                  display:flex;
                  justify-content:center;
@@ -68,10 +68,11 @@ nav{
 
 }
 
-.navigation ul {
+   .navigation ul {
                   display:flex;
                   justify-content:flex-end;
-                  align-content:center;
+                  align-items:center;
+
                   margin-right:24px;
                   margin-left:650px;
                   padding:1.46rem 0.5rem;
@@ -81,21 +82,44 @@ nav{
                font-weight:bold;
                display:inline-flex;
                justify-content:space-between;
-               align-content:flex-end;
+               align-content: flex-end;
                align-items:center;
                margin-right:16px;
                color:#e0f7fa;
 }
 
-.mobilenav{
+/*mobilenavigation*/
+.mobilenavigation{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+   align-items: center;
+                     background-color:white;
+                       color:black;
+                }
+.mobilenavigation ul{display:flex;
 
-           display:flex;
-           justify-content:center;
-           align-items:center;
-            font-family:"michroma",sans-serif;
-            background-color:white;
-            color:black;
-}
+
+    width:100%;
+    height:64px;
+     margin: 0 auto;}
+
+
+
+
+.mobilenavigation li{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:white;
+  font-size:20rem;
+                     color:black;
+                      font-size:2rem;}
+
+
+/*.mobilenavigation{display:none;}*/
+/*mobilenavigationend*/
+
 
 .banner {
   display: flex;
@@ -179,6 +203,7 @@ button {
 }
 
 /* Articles */
+ .mobileimg{display:none;}
 .infoarticles {
   display: flex;
   justify-content:space-between;
@@ -298,7 +323,7 @@ button {
 
 
 
-
+/* course section*/
 
 
 
@@ -371,6 +396,8 @@ button {
 
 }
 
+
+/*mobile course section*/
 .mobcourses{
 
                          display:flex;
@@ -379,19 +406,24 @@ button {
              align-items:center;
              background-color:#80deea;
               }
+.mobspan{width:250px;
+          display:flex;
+          justify-content:space-around;
+          align-items: stretch;
+          border:1px solid black;
+          background-color:#b3ebf2;
+          color:black;
+          font-size:1.5rem;
+          margin:1rem 1rem 0 1rem;
+          padding-bottom:0.5rem;
+            font-family:"michroma",sans-serif;
+}
 
-  .mobspan{width:250px;
-            display:flex;
-            justify-content:space-around;
-            align-items: stretch;
-            border:1px solid black;
-            background-color:#b3ebf2;
-            color:black;
-            font-size:1.5rem;
-            margin:1rem 1rem 0 1rem;
-            padding-bottom:0.5rem;
-              font-family:"michroma",sans-serif;
-  }
+
+
+ .mobcourses{display:none;}
+  .mobspan{display:none;}
+
 
 .video-section {
   background-color:#03f7fa;
@@ -522,21 +554,141 @@ footer .privacy a {
 }
 
 /* mobile rules */
-@media only screen and (max-width:500px){
-  .desktop{
+
+
+
+
+
+  @media only screen and (max-width:600px) {
+
+    .logoflex {
+      display: none;
+    }
+   .headerflex{display:none;}
+  .desktopnavigation{
     display: none;
   }
 
+  .mobilenavigation {display:flex;
+                     justify-content:center;
+                     align-items:center;
+                      width: 100%;
+
+
+  }
+   .mobilenavigation ul {
+                 width: 600px;
+                 height:68px;
+                 display:flex;
+                justify-content:space-between;
+               align-items: center;
+
+               color:black;
+             }
+ .mobilenavigation li{ width: 100%;
+
+                       display:flex;
+                       justify-content:center;
+
+                    }
+
+.banner-image{display:none;}
+
+.feature {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;;
+  text-align:center;
+  width: 100%;
+
+  line-height: 1.1;
+  color:black;
+}
+
+.main-image-container{display:none;}
+
+/*articles*/
+.infoarticle-list-container{width:100%;}
+
+.infoarticle-list{width:100%;}
+
+
+.infoarticle{
+             display:flex;
+             flex-direction:column;
+             justify-content:center;
+             align-items:center;
+             width:100%;
+}
+.small-image-container{width:100%;
+                       height:auto;}
+
+
+.desktopimg{display:none;}
+.mobileimg{display:flex;
+           width:100%;
+
+          }
+
+/*courses*/
+
+.majors-grid{display:none;}
+
+.mobcourses{display:flex;
+             flex-direction:column;
+             justify-content:space-around;
+}
+.mobcourses{
+
+             display:flex;
+             flex-direction:column;
+             justify-content:center;
+             align-items:center;
+             background-color:#80deea;
+             padding-bottom:32px;
+              }
+.mobspan{
+          width:80%;
+          display:flex;
+          justify-content:space-around;
+          align-items: center;
+          border:1px solid white;
+          background-color:black;
+          color:#b3ebf2;
+          font-size:1.5rem;
+
+          padding:1rem 1rem 0 1rem;
+         padding-bottom:1rem;
+            font-family:"michroma",sans-serif;
+}
+
+/*videosection#03f7fa*/
+ .video-article-list{display:none;}
+
+.video-text{display:none;}
+
+.exibit{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  width: 100%;
+  background-color:white;
+}
+.exhibit .main-video {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.main-video video {
+
+  width: 100%;
 
 }
 
-/* desktop rules */
-@media only screen and (min-width:501px){
-    .mobilenav {
-      display:none;
-    }
-    .mobcourses{
-       display:none;
+/*footer*/
 
-    }
-  }
+.privacy a{display:none;}
